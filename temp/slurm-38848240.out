@@ -1,0 +1,15 @@
+2022-07-03 20:11:37.098588: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /sw/arcts/centos7/python/3.9.1/lib:/sw/arcts/centos7/gcc/8.2.0/lib64:/opt/slurm/lib64::
+2022-07-03 20:11:37.098791: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+    8192/11490434 [..............................] - ETA: 0s 4341760/11490434 [==========>...................] - ETA: 0s10158080/11490434 [=========================>....] - ETA: 0s11490434/11490434 [==============================] - 0s 0us/step
+/home/rivachen/GP_MNIST/Second_Derivative/second_derivative.py:252: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:204.)
+  x_tr, y_tr = torch.tensor(x), torch.tensor(y)
+/home/rivachen/GP_MNIST/Second_Derivative/second_derivative.py:29: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.image = torch.tensor(image, dtype = torch.float32)
+/home/rivachen/GP_MNIST/Second_Derivative/second_derivative.py:56: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.log_softmax(x)
+/home/rivachen/.local/lib/python3.9/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+/home/rivachen/.local/lib/python3.9/site-packages/torch/nn/functional.py:1338: UserWarning: dropout2d: Received a 3D input to dropout2d and assuming that channel-wise 1D dropout behavior is desired - input is interpreted as shape (N, C, L), where C is the channel dim. This behavior will change in a future release to interpret the input as one without a batch dimension, i.e. shape (C, H, W). To maintain the 1D channel-wise dropout behavior, please switch to using dropout1d instead.
+  warnings.warn("dropout2d: Received a 3D input to dropout2d and assuming that channel-wise "
+slurmstepd: error: *** JOB 38848240 ON gl3241 CANCELLED AT 2022-07-03T21:11:34 DUE TO TIME LIMIT ***
